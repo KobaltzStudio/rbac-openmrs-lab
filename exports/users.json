@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "username": "yennhi",
+      "full_name": "Yen Nhi",
+      "assigned_role": "Medical Student",
+      "description": "Student account with patient viewing permissions only."
+    },
+
+    {
+      "username": "anhquoc",
+      "full_name": "Anh Quoc",
+      "assigned_role": "Data Assistant",
+      "description": "Assistant account with patient viewing and editing permissions."
+    },
+
+    {
+      "username": "trinhnghi",
+      "full_name": "Trinh Nghi",
+      "assigned_role": "Data Manager",
+      "description": "Manager account with patient creation and editing permissions."
+    }
+  ]
+}

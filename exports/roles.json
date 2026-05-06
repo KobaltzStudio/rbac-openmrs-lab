@@ -1,0 +1,59 @@
+{
+  "Base_PatientViewer": {
+    "privileges": [
+      "View Patients",
+      "Get Patients"
+    ]
+  },
+
+  "Base_PatientEditor": {
+    "inherits": [
+      "Base_PatientViewer"
+    ],
+    "privileges": [
+      "Add Patients",
+      "Edit Patients"
+    ]
+  },
+
+  "Doctor": {
+    "modified_existing_role": true,
+    "inherits": [
+      "Base_PatientEditor",
+      "Base_EncounterWorker",
+      "Base_LabWorker",
+      "Base_PatientManager"
+    ],
+    "additional_privileges": [
+      "View Visits",
+      "Add Visits",
+      "Edit Visits"
+    ]
+  },
+
+  "Nurse": {
+    "modified_existing_role": true,
+    "inherits": [
+      "Base_PatientManager",
+      "Base_LabWorker"
+    ],
+    "additional_privileges": [
+      "View Observations",
+      "Add Observations",
+      "Edit Observations"
+    ]
+  },
+
+  "Registration Clerk": {
+    "modified_existing_role": true,
+    "inherits": [
+      "Base_UserManager",
+      "Base_PatientEditor"
+    ],
+    "additional_privileges": [
+      "View Appointments",
+      "Add Appointments",
+      "Edit Appointments"
+    ]
+  }
+}
